@@ -33,7 +33,13 @@
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-
+<script>
+$(document).ready(function(){
+    $("p").dblclick(function(){
+        alert("The paragraph was double-clicked.");
+    });
+});
+</script>
   <header class="main-header">
 
     <!-- Logo -->
@@ -335,16 +341,30 @@
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
-        <li>
-          <a href="pages/widgets.html">
+        <li class="treeview">
+          <a href="#">
             <i class="fa fa-folder"></i> <span>Category</span>
+			<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
           </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> Entry</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> List</a></li>
+          </ul>
         </li>
-        <li>
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-files-o"></i>
             <span>Notes</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
           </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> Entry</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> List</a></li>
+          </ul>
         </li>
         <li>
           <a href="pages/mailbox/mailbox.html">

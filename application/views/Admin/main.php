@@ -562,7 +562,7 @@
                   </tr>
                   </thead>
                   <tbody>
-                  <tr>
+                  <tr class="dbclick">
                     <td><a href="pages/examples/invoice.html">OR9842</a></td>
                     <td>Call of Duty IV</td>
                     <td><span class="label label-success">Shipped</span></td>
